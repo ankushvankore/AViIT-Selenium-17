@@ -16,6 +16,7 @@ public class D23Synchronization_ExplicitWait {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
         driver.get("https://omayo.blogspot.com/");
+        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(20));
 
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
 
