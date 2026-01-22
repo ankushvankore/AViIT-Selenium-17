@@ -8,6 +8,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 import java.time.Duration;
+import java.util.Iterator;
 import java.util.Set;
 
 public class D26HandlingMultipleWindows {
@@ -29,9 +30,14 @@ public class D26HandlingMultipleWindows {
         Set<String>windows = driver.getWindowHandles();
         System.out.println(windows);
 
-        Object[] winArray = windows.toArray();
+        /*Object[] winArray = windows.toArray();
         String win1 = winArray[0].toString();       //id of 1st window
         String win2 = winArray[1].toString();       //id of 2nd window
+         */
+        Iterator<String>itr = windows.iterator();
+        //Iterator is an interface for iterating (reading) the values from Set<>
+        String win1 = itr.next();   //Will read 1st element i.e. id of 1st window
+        String win2 = itr.next();   //Will read 2nd element i.e. id of 2nd window
 
         driver.switchTo().window(win2);
         Thread.sleep(5000);
