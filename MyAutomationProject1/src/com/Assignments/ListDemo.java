@@ -13,6 +13,9 @@ public class ListDemo {
 
         //System.out.println(fruits.get(0));
 
+        for(int i = 0; i < fruits.size(); i++)
+            System.out.println(fruits.get(i));
+
         for(String f : fruits)
             System.out.println(f);
     }
