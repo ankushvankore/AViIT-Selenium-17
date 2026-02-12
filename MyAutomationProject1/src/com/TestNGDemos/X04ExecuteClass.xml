@@ -1,0 +1,10 @@
+<suite name = "Selenium Tests">
+    <test name = "Execute Class">
+        <classes>
+            <class name = "com.TestNGDemos.D05SeleniumAssignment">
+            </class>
+            <class name="com.TestNGDemos.D07AssertionDemo">
+            </class>
+        </classes>
+    </test>
+</suite>

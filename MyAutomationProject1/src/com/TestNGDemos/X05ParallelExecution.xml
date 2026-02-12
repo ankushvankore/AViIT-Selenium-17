@@ -1,0 +1,8 @@
+<suite name = "Selenium Tests" parallel = "methods" thread-count="3">
+    <test name = "Parellel Execution">
+        <classes>
+            <class name = "com.TestNGDemos.D02TestOnlineShoppingApps">
+            </class>
+        </classes>
+    </test>
+</suite>

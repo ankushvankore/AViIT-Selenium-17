@@ -1,0 +1,11 @@
+<suite name = "Selenium Tests">
+    <test name = "Execute Single Test">
+        <classes>
+            <class name = "com.TestNGDemos.D05SeleniumAssignment">
+                <methods>
+                    <include name = "projectsLink"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

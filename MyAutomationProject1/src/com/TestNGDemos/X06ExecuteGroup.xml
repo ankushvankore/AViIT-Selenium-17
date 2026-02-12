@@ -1,0 +1,13 @@
+<suite name = "Selenium Tests">
+    <test name = "Execute Multile Tests">
+        <groups>
+            <run>
+                <include name = "MiscFunctionality"></include>
+            </run>
+        </groups>
+        <classes>
+            <class name = "com.TestNGDemos.D05SeleniumAssignment">
+            </class>
+        </classes>
+    </test>
+</suite>

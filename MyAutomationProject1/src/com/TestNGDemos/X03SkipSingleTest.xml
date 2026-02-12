@@ -1,0 +1,11 @@
+<suite name = "Selenium Tests">
+    <test name = "Skip Single Tests">
+        <classes>
+            <class name = "com.TestNGDemos.D05SeleniumAssignment">
+                <methods>
+                    <exclude name = "downloadsLink"></exclude>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
