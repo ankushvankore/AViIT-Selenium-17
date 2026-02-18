@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import java.time.Duration;
@@ -12,10 +13,11 @@ import java.time.Duration;
 public class D08Parameterization {
     WebDriver driver;
 
+    @Parameters ({"userName", "password"})
     @Test
-    public void login(){
-        driver.findElement(By.xpath("//input[@id='username']")).sendKeys("student");
-        driver.findElement(By.xpath("//input[@id='password']")).sendKeys("Password123");
+    public void login(String un, String ps){
+        driver.findElement(By.xpath("//input[@id='username']")).sendKeys(un);
+        driver.findElement(By.xpath("//input[@id='password']")).sendKeys(ps);
         driver.findElement(By.xpath("//button[@id='submit']")).click();
     }
 
