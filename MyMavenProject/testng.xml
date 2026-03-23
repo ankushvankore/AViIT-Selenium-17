@@ -1,0 +1,9 @@
+<suite name = "For Execution">
+    <test name = "Maven Execition">
+        <classes>
+            <class name = "com.WebTests.D03ExcelHandling">
+
+            </class>
+        </classes>
+    </test>
+</suite>
