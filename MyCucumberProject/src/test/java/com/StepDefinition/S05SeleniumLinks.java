@@ -1,5 +1,7 @@
 package com.StepDefinition;
 
+import io.cucumber.java.After;
+import io.cucumber.java.Before;
 import io.cucumber.java.en.*;
 import org.junit.Assert;
 import org.openqa.selenium.By;
@@ -10,6 +12,17 @@ import java.time.Duration;
 
 public class S05SeleniumLinks {
     WebDriver driver;
+
+    //@Before
+    public void beforeHook(){
+        System.out.println("Before Hook Executed");
+    }
+
+    //@After
+    public void closeBrowser(){
+        driver.close();
+    }
+
     @Given("Launch url as {string}")
     public void launch_url_as(String url) {
         driver = new ChromeDriver();
